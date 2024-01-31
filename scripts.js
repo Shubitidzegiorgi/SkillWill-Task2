@@ -46,8 +46,9 @@ let user = {
     userName: 'Agent 007',
 }
 
-
     let clone = Object.assign({}, user); 
+
+// check if it's different object
 
     user.name = "sean";
 
