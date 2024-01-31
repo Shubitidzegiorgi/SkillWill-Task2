@@ -40,25 +40,18 @@ console.log(findYoungestPerson(users));
 (განსხვავებულ) ობიექტს
 */
 
-const user = {
+let user = {
     name: 'James',
     lastName: 'Bond',
     userName: 'Agent 007',
 }
 
-function createNewUser(user) {
-    const newUser = {}; 
 
-    
-    for (let key in user) {
-        newUser[key] = user[key];
-    }
+    let clone = Object.assign({}, user); 
 
-    return newUser;
-}
-const createdNewUser = createNewUser(user)
+    user.name = "sean";
 
-console.log(user,createdNewUser);
+console.log(user, clone);
 
 // Task 3
 
